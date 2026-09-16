@@ -1,0 +1,19 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+challenge-reference/
+takeovers-*.pdf
+docs/INTERVIEW_STUDY_GUIDE.md
+tmp/
+*.egg-info/
+dist/
+build/
+# Keep final challenge artefacts tracked:
+!results.json
+!review.json
