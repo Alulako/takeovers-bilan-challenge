@@ -1,0 +1,40 @@
+{
+  "about": "Thirty source-grounded field opportunities reviewed directly against the shipped OCR rows and statement context. This is a disclosed evaluation sample, not an official Takeovers answer key.",
+  "review_scope": "Five filings x six P0 fields. Values, units, pages and source snippets were checked against the supplied filing evidence; bbox geometry is tested separately.",
+  "items": [
+    {"doc_id":"63e13943526e1f30cd100db5","field_key":"BS_TOTAL_ASSETS_FRGAAP","value":1807858,"unit":"EUR","page":4,"snippet":"1 807 858"},
+    {"doc_id":"63e13943526e1f30cd100db5","field_key":"BS_TOTAL_EQUITY_FRGAAP","value":1147625,"unit":"EUR","page":5,"snippet":"1 147 625"},
+    {"doc_id":"63e13943526e1f30cd100db5","field_key":"PL_REVENUE_FRGAAP","value":1048023,"unit":"EUR","page":6,"snippet":"1 048 023"},
+    {"doc_id":"63e13943526e1f30cd100db5","field_key":"PL_EXT_SERVICES_COSTS_FRGAAP","value":385028,"unit":"EUR","page":6,"snippet":"385 028"},
+    {"doc_id":"63e13943526e1f30cd100db5","field_key":"PL_FINANCIAL_RESULTS_FRGAAP","value":-20300,"unit":"EUR","page":6,"snippet":"(20 300)"},
+    {"doc_id":"63e13943526e1f30cd100db5","field_key":"PL_INCOME_TAX_FRGAAP","value":1146,"unit":"EUR","page":7,"snippet":"1 146"},
+
+    {"doc_id":"63e13943526e1f30cd100db6","field_key":"BS_TOTAL_ASSETS_FRGAAP","value":1717114,"unit":"EUR","page":4,"snippet":"1 717 114"},
+    {"doc_id":"63e13943526e1f30cd100db6","field_key":"BS_TOTAL_EQUITY_FRGAAP","value":1191897,"unit":"EUR","page":5,"snippet":"1 191 897"},
+    {"doc_id":"63e13943526e1f30cd100db6","field_key":"PL_REVENUE_FRGAAP","value":964484,"unit":"EUR","page":6,"snippet":"964 484"},
+    {"doc_id":"63e13943526e1f30cd100db6","field_key":"PL_EXT_SERVICES_COSTS_FRGAAP","value":364789,"unit":"EUR","page":6,"snippet":"364 789"},
+    {"doc_id":"63e13943526e1f30cd100db6","field_key":"PL_FINANCIAL_RESULTS_FRGAAP","value":-13520,"unit":"EUR","page":6,"snippet":"13 520"},
+    {"doc_id":"63e13943526e1f30cd100db6","field_key":"PL_INCOME_TAX_FRGAAP","value":1146,"unit":"EUR","page":7,"snippet":"1 146"},
+
+    {"doc_id":"63e881158be6eb9f9d1ff975","field_key":"BS_TOTAL_ASSETS_FRGAAP","value":945632,"unit":"EUR","page":2,"snippet":"945 632"},
+    {"doc_id":"63e881158be6eb9f9d1ff975","field_key":"BS_TOTAL_EQUITY_FRGAAP","value":532640,"unit":"EUR","page":3,"snippet":"532 640"},
+    {"doc_id":"63e881158be6eb9f9d1ff975","field_key":"PL_REVENUE_FRGAAP","value":1800826,"unit":"EUR","page":4,"snippet":"1 800 826"},
+    {"doc_id":"63e881158be6eb9f9d1ff975","field_key":"PL_EXT_SERVICES_COSTS_FRGAAP","value":297253,"unit":"EUR","page":4,"snippet":"297 253"},
+    {"doc_id":"63e881158be6eb9f9d1ff975","field_key":"PL_FINANCIAL_RESULTS_FRGAAP","value":-2778,"unit":"EUR","page":4,"snippet":"2 778)"},
+    {"doc_id":"63e881158be6eb9f9d1ff975","field_key":"PL_INCOME_TAX_FRGAAP","value":63846,"unit":"EUR","page":5,"snippet":"63 846"},
+
+    {"doc_id":"65784e5da67d84faf4042736","field_key":"BS_TOTAL_ASSETS_FRGAAP","value":1014105,"unit":"EUR","page":4,"snippet":"1 014 105"},
+    {"doc_id":"65784e5da67d84faf4042736","field_key":"BS_TOTAL_EQUITY_FRGAAP","value":658859,"unit":"EUR","page":5,"snippet":"658 859"},
+    {"doc_id":"65784e5da67d84faf4042736","field_key":"PL_REVENUE_FRGAAP","value":1805459,"unit":"EUR","page":6,"snippet":"1 805 459"},
+    {"doc_id":"65784e5da67d84faf4042736","field_key":"PL_EXT_SERVICES_COSTS_FRGAAP","value":329158,"unit":"EUR","page":6,"snippet":"329 158"},
+    {"doc_id":"65784e5da67d84faf4042736","field_key":"PL_FINANCIAL_RESULTS_FRGAAP","value":-2096,"unit":"EUR","page":6,"snippet":"2 096)"},
+    {"doc_id":"65784e5da67d84faf4042736","field_key":"PL_INCOME_TAX_FRGAAP","value":53240,"unit":"EUR","page":7,"snippet":"53 240"},
+
+    {"doc_id":"63e8ebbb54febda17c19ee7d","field_key":"BS_TOTAL_ASSETS_FRGAAP","value":4823303,"unit":"EUR","page":2,"snippet":"4 823 303"},
+    {"doc_id":"63e8ebbb54febda17c19ee7d","field_key":"BS_TOTAL_EQUITY_FRGAAP","value":2816959,"unit":"EUR","page":3,"snippet":"2 816 959"},
+    {"doc_id":"63e8ebbb54febda17c19ee7d","field_key":"PL_REVENUE_FRGAAP","value":4982524,"unit":"EUR","page":4,"snippet":"4 982 524"},
+    {"doc_id":"63e8ebbb54febda17c19ee7d","field_key":"PL_EXT_SERVICES_COSTS_FRGAAP","value":1339065,"unit":"EUR","page":4,"snippet":"1 339 065"},
+    {"doc_id":"63e8ebbb54febda17c19ee7d","field_key":"PL_FINANCIAL_RESULTS_FRGAAP","value":18831,"unit":"EUR","page":4,"snippet":"18 831"},
+    {"doc_id":"63e8ebbb54febda17c19ee7d","field_key":"PL_INCOME_TAX_FRGAAP","value":164610,"unit":"EUR","page":5,"snippet":"164 610"}
+  ]
+}
