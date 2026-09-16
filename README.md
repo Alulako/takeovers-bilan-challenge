@@ -4,7 +4,7 @@ A deterministic, provenance-first Python pipeline for extracting financial facts
 
 The implementation deliberately optimizes for **correctness, traceability and honest abstention** rather than maximum field coverage. It uses the OCR shipped by Takeovers and keeps every accepted value grounded to the original PDF page and normalized bounding box.
 
-> **Demo video:** TODO — add the ~3 minute Loom link before submission.
+> **Demo video:** https://youtu.be/4alN0ZTs76A
 
 ## 1. Problem
 
