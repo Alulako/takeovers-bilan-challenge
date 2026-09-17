@@ -1,0 +1,5517 @@
+{
+  "about": "Diagnostics are intentionally separate from the scorer-facing results.json.",
+  "scope": {
+    "documents": 15,
+    "pages": 415,
+    "empty_ocr_pages": 41,
+    "empty_layout_pages": 46
+  },
+  "coverage": {
+    "accepted_total": 57,
+    "accepted_by_field": {
+      "BS_TOTAL_ASSETS_FRGAAP": 14,
+      "BS_TOTAL_EQUITY_FRGAAP": 12,
+      "PL_EXT_SERVICES_COSTS_FRGAAP": 8,
+      "PL_FINANCIAL_RESULTS_FRGAAP": 7,
+      "PL_INCOME_TAX_FRGAAP": 9,
+      "PL_REVENUE_FRGAAP": 7
+    },
+    "issues_by_status": {
+      "definition_unresolved": 60,
+      "not_found": 33,
+      "not_implemented": 30
+    },
+    "accepted_by_company": {
+      "328024377": 17,
+      "401009741": 14,
+      "445070311": 6,
+      "504304205": 14,
+      "820561470": 6
+    }
+  },
+  "evaluation": {
+    "status": "completed",
+    "reference_items": 30,
+    "value_unit_matches": 30,
+    "grounded_matches": 30,
+    "missed_available": 0,
+    "value_unit_agreement": 1.0,
+    "grounded_agreement": 1.0,
+    "mismatches": [],
+    "claim_scope": "Agreement on the disclosed reviewed sample only; not a global accuracy estimate."
+  },
+  "timing": {
+    "load_seconds": 1.943663900005049,
+    "extraction_and_checks_seconds": 23.560032699999283,
+    "elapsed_before_serialization_seconds": 25.504609499999788,
+    "seconds_per_page_reported": 0.06145689036144527,
+    "document_seconds": {
+      "6493e4372f502414800f8164": 0.437534600001527,
+      "6543d3fd08093cdace058668": 0.5898390999936964,
+      "67458f18cea78a70070fa226": 0.5990416999993613,
+      "63e8ebbb54febda17c19ee7c": 1.437974899992696,
+      "63e8ebbb54febda17c19ee7d": 2.412402599991765,
+      "63e8ebbb54febda17c19ee7e": 2.374574200002826,
+      "63e2481c916269756a09542b": 1.4772971000056714,
+      "65a4095d5fd178b16b09b860": 1.4955808000086108,
+      "6860f28ca0138eae340c7453": 1.079483200010145,
+      "63e13943526e1f30cd100db5": 2.817874899992603,
+      "63e13943526e1f30cd100db6": 2.813215999995009,
+      "66cd893cedec9b09d50191e8": 2.909273299999768,
+      "63e881158be6eb9f9d1ff975": 1.157658199997968,
+      "65784e5da67d84faf4042736": 1.1661616000055801,
+      "68f0a715f28d8aaf48046416": 0.7920687000005273
+    }
+  },
+  "runtime": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "command_model": "provided OCR + deterministic rules",
+    "api_calls": 0,
+    "api_cost_eur": 0.0
+  },
+  "documents": [
+    {
+      "siren": "820561470",
+      "doc_id": "6493e4372f502414800f8164",
+      "pdf": "data/820561470/bilans/pdf/bilan_2023-06-05_6493e4372f502414800f8164.pdf",
+      "fiscal_year_end": "2021-08-31",
+      "input_sha256": "877bde874cda8fd0a83a82e8ae6b1d06fc647da2c3e1195d6c437543e6fadea5",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 638962,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              110
+            ],
+            "texts": [
+              "638 962"
+            ],
+            "bbox": [
+              0.75425103,
+              0.85902466,
+              0.80809718,
+              0.87107623
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              107
+            ],
+            "texts": [
+              "TOTAL ACTIF (I à VI)"
+            ],
+            "bbox": [
+              0.1951417,
+              0.85930493,
+              0.33319839,
+              0.87247757
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 6,
+            "line_indexes": [
+              5
+            ],
+            "texts": [
+              "31/08/2021"
+            ],
+            "bbox": [
+              0.57854252,
+              0.12892377,
+              0.64777329,
+              0.14209641
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "TOTAL ACTIF (I à VI)",
+            "group_count": 4,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 322009,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 7,
+            "line_indexes": [
+              28
+            ],
+            "texts": [
+              "322 009"
+            ],
+            "bbox": [
+              0.76153848,
+              0.38733184,
+              0.81457492,
+              0.3993834
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 7,
+            "line_indexes": [
+              27
+            ],
+            "texts": [
+              "Total des capitaux propres"
+            ],
+            "bbox": [
+              0.48623483,
+              0.38424888,
+              0.66558706,
+              0.39798206
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 7,
+            "line_indexes": [
+              4
+            ],
+            "texts": [
+              "31/08/2021."
+            ],
+            "bbox": [
+              0.71659921,
+              0.1294843,
+              0.78987856,
+              0.14097534
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Total des capitaux propres",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "passif_total_not_found"
+        }
+      ]
+    },
+    {
+      "siren": "820561470",
+      "doc_id": "6543d3fd08093cdace058668",
+      "pdf": "data/820561470/bilans/pdf/bilan_2023-06-13_6543d3fd08093cdace058668.pdf",
+      "fiscal_year_end": "2022-08-31",
+      "input_sha256": "15b834b9c820faa9d47ab5b853ca8e30c2a00dd2f234bf12a93ead3e90ecb3fa",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 638554,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 3,
+            "line_indexes": [
+              109
+            ],
+            "texts": [
+              "638 554"
+            ],
+            "bbox": [
+              0.74504252,
+              0.85878398,
+              0.80169975,
+              0.87111236
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 3,
+            "line_indexes": [
+              111
+            ],
+            "texts": [
+              "TOTaL ACTiF (I à VI)"
+            ],
+            "bbox": [
+              0.1902064,
+              0.86242645,
+              0.32739783,
+              0.87391426
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 3,
+            "line_indexes": [
+              6
+            ],
+            "texts": [
+              "31/08/2022"
+            ],
+            "bbox": [
+              0.56738165,
+              0.12832726,
+              0.63779849,
+              0.14177641
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "TOTaL ACTiF (I à VI)",
+            "group_count": 3,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 438221,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              27
+            ],
+            "texts": [
+              "438 221"
+            ],
+            "bbox": [
+              0.75151763,
+              0.38619141,
+              0.80412791,
+              0.39854056
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              26
+            ],
+            "texts": [
+              "Total des capitaux propres"
+            ],
+            "bbox": [
+              0.47794417,
+              0.3847881,
+              0.65681913,
+              0.39685658
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 4,
+            "line_indexes": [
+              3
+            ],
+            "texts": [
+              "31/08/2022"
+            ],
+            "bbox": [
+              0.70012143,
+              0.12882403,
+              0.77539461,
+              0.14061184
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Total des capitaux propres",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "passif_total_not_found"
+        }
+      ]
+    },
+    {
+      "siren": "820561470",
+      "doc_id": "67458f18cea78a70070fa226",
+      "pdf": "data/820561470/bilans/pdf/bilan_2024-01-15_67458f18cea78a70070fa226.pdf",
+      "fiscal_year_end": "2023-08-31",
+      "input_sha256": "fd917925bf29b08e059c6eba816f018154a4224d30ad9eca98af52e0be7a57ee",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 866478,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 1,
+            "line_indexes": [
+              109
+            ],
+            "texts": [
+              "866 478"
+            ],
+            "bbox": [
+              0.75768262,
+              0.87231317,
+              0.81007557,
+              0.88284698
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 1,
+            "line_indexes": [
+              106
+            ],
+            "texts": [
+              "TOTAL ACTIF (I à VI)"
+            ],
+            "bbox": [
+              0.17289673,
+              0.87459075,
+              0.31314861,
+              0.88483986
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 1,
+            "line_indexes": [
+              5
+            ],
+            "texts": [
+              "31/08/2023"
+            ],
+            "bbox": [
+              0.56423174,
+              0.11188612,
+              0.63435768,
+              0.12213523
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "TOTAL ACTIF (I à VI)",
+            "group_count": 4,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 460510,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 2,
+            "line_indexes": [
+              28
+            ],
+            "texts": [
+              "460 510"
+            ],
+            "bbox": [
+              0.7572796,
+              0.37836299,
+              0.80926952,
+              0.38918149
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 2,
+            "line_indexes": [
+              27
+            ],
+            "texts": [
+              "Total des capitaux propres"
+            ],
+            "bbox": [
+              0.47032746,
+              0.37551601,
+              0.65732997,
+              0.38775801
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 2,
+            "line_indexes": [
+              4
+            ],
+            "texts": [
+              "31/08/2023"
+            ],
+            "bbox": [
+              0.70649874,
+              0.11046263,
+              0.7786398,
+              0.12213523
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Total des capitaux propres",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "passif_total_not_found"
+        }
+      ]
+    },
+    {
+      "siren": "328024377",
+      "doc_id": "63e8ebbb54febda17c19ee7c",
+      "pdf": "data/328024377/bilans/pdf/bilan_2020-12-24_63e8ebbb54febda17c19ee7c.pdf",
+      "fiscal_year_end": "2020-06-30",
+      "input_sha256": "f2829a425ea0f7c940623779d501031ec2ca8cb7b6a7417d4c13e31d060b8bc2",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 3500529,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.857,
+          "value_source": {
+            "page": 2,
+            "line_indexes": [
+              112
+            ],
+            "texts": [
+              "3 500 529"
+            ],
+            "bbox": [
+              0.73976471,
+              0.69206651,
+              0.78978151,
+              0.70090261
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 2,
+            "line_indexes": [
+              109
+            ],
+            "texts": [
+              "TOTAL GENERAL"
+            ],
+            "bbox": [
+              0.24040336,
+              0.69149644,
+              0.34043697,
+              0.70118765
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              22
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives Sauf mention, les montants sont expnimés en euros"
+            ],
+            "bbox": [
+              0.24121008,
+              0.49425178,
+              0.69821849,
+              0.50394299
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 2,
+            "line_indexes": [
+              9
+            ],
+            "texts": [
+              "30/06/2020"
+            ],
+            "bbox": [
+              0.72403361,
+              0.22460808,
+              0.77889076,
+              0.23144893
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "TOTAL GENERAL",
+            "group_count": 4,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 2365051,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.857,
+          "value_source": {
+            "page": 3,
+            "line_indexes": [
+              29
+            ],
+            "texts": [
+              "2 365 051"
+            ],
+            "bbox": [
+              0.74178151,
+              0.36342043,
+              0.79341176,
+              0.37168646
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 3,
+            "line_indexes": [
+              28
+            ],
+            "texts": [
+              "TOTAL CAPITAUX PROPRES"
+            ],
+            "bbox": [
+              0.24887395,
+              0.36342043,
+              0.40295798,
+              0.37168646
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              22
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives Sauf mention, les montants sont expnimés en euros"
+            ],
+            "bbox": [
+              0.24121008,
+              0.49425178,
+              0.69821849,
+              0.50394299
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 3,
+            "line_indexes": [
+              5
+            ],
+            "texts": [
+              "30/06/2020"
+            ],
+            "bbox": [
+              0.7252437,
+              0.21035629,
+              0.78252101,
+              0.2231829
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 0,
+            "anchor_text": "TOTAL CAPITAUX PROPRES",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": [
+              {
+                "page": 13,
+                "snippet": "2 365 051",
+                "method": "label+geometry"
+              }
+            ]
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1182000,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.807,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              73
+            ],
+            "texts": [
+              "1 182 000"
+            ],
+            "bbox": [
+              0.49532773,
+              0.38679335,
+              0.54252101,
+              0.39562945
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              72
+            ],
+            "texts": [
+              "Autres achats & charges externes"
+            ],
+            "bbox": [
+              0.24927731,
+              0.3887886,
+              0.39731092,
+              0.39562945
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              22
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives Sauf mention, les montants sont expnimés en euros"
+            ],
+            "bbox": [
+              0.24121008,
+              0.49425178,
+              0.69821849,
+              0.50394299
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 4,
+            "line_indexes": [
+              11
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.47435294,
+              0.22460808,
+              0.53082353,
+              0.23401425
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Autres achats & charges externes",
+            "group_count": 6,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": 357,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.857,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              157
+            ],
+            "texts": [
+              "357"
+            ],
+            "bbox": [
+              0.51872269,
+              0.56551069,
+              0.54252101,
+              0.5752019
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              156
+            ],
+            "texts": [
+              "Résultat financier"
+            ],
+            "bbox": [
+              0.25008403,
+              0.56693587,
+              0.34447059,
+              0.5752019
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              22
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives Sauf mention, les montants sont expnimés en euros"
+            ],
+            "bbox": [
+              0.24121008,
+              0.49425178,
+              0.69821849,
+              0.50394299
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 4,
+            "line_indexes": [
+              11
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.47435294,
+              0.22460808,
+              0.53082353,
+              0.23401425
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Résultat financier",
+            "group_count": 6,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": [
+              {
+                "page": 16,
+                "snippet": "357",
+                "method": "label+geometry"
+              }
+            ]
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 31566,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.857,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              188
+            ],
+            "texts": [
+              "31 566"
+            ],
+            "bbox": [
+              0.50863866,
+              0.6823753,
+              0.54252101,
+              0.69092637
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              187
+            ],
+            "texts": [
+              "Impôts sur les bénéfices"
+            ],
+            "bbox": [
+              0.25008403,
+              0.6832304,
+              0.35778151,
+              0.69149644
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              22
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives Sauf mention, les montants sont expnimés en euros"
+            ],
+            "bbox": [
+              0.24121008,
+              0.49425178,
+              0.69821849,
+              0.50394299
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 4,
+            "line_indexes": [
+              11
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.47435294,
+              0.22460808,
+              0.53082353,
+              0.23401425
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Impôts sur les bénéfices",
+            "group_count": 5,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "passif_total_not_found"
+        }
+      ]
+    },
+    {
+      "siren": "328024377",
+      "doc_id": "63e8ebbb54febda17c19ee7d",
+      "pdf": "data/328024377/bilans/pdf/bilan_2021-12-17_63e8ebbb54febda17c19ee7d.pdf",
+      "fiscal_year_end": "2021-06-30",
+      "input_sha256": "e59ff4f93593685579409f6677c3abdf51c19e62fa3a977223b86313352373d4",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 4823303,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 2,
+            "line_indexes": [
+              241
+            ],
+            "texts": [
+              "4 823 303"
+            ],
+            "bbox": [
+              0.86534571,
+              0.91392979,
+              0.95228464,
+              0.92667045
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 2,
+            "line_indexes": [
+              233
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.31459764,
+              0.91109854,
+              0.48281438,
+              0.92582107
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08050161,
+              0.51867574,
+              0.71440126,
+              0.53112622
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 2,
+            "line_indexes": [
+              36
+            ],
+            "texts": [
+              "30/06/2021"
+            ],
+            "bbox": [
+              0.85402343,
+              0.14694224,
+              0.94864534,
+              0.1585504
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 3,
+            "column_basis": "net_header",
+            "disagreeing_sources": [
+              {
+                "page": 23,
+                "value": "4823304",
+                "unit": "EUR",
+                "snippet": "4 823 304",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 2816959,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 3,
+            "line_indexes": [
+              50
+            ],
+            "texts": [
+              "2 816 959"
+            ],
+            "bbox": [
+              0.8617064,
+              0.37061155,
+              0.95066717,
+              0.38420159
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 3,
+            "line_indexes": [
+              49
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.79781639,
+              0.37061155,
+              0.82207842,
+              0.38618347
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08050161,
+              0.51867574,
+              0.71440126,
+              0.53112622
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 1,
+            "column_basis": "nearest_right_code_fallback",
+            "disagreeing_sources": [
+              {
+                "page": 24,
+                "value": "2816960",
+                "unit": "EUR",
+                "snippet": "2 816 960",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1339065,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.84,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              80,
+              81,
+              82
+            ],
+            "texts": [
+              "1",
+              "339",
+              "065"
+            ],
+            "bbox": [
+              0.85847146,
+              0.42331637,
+              0.95228464,
+              0.43803057
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              79
+            ],
+            "texts": [
+              "Autres achats et charges externes (3) (6 bis)*"
+            ],
+            "bbox": [
+              0.11686211,
+              0.42586306,
+              0.36393044,
+              0.43689871
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08050161,
+              0.51867574,
+              0.71440126,
+              0.53112622
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "Autres achats et charges externes (3) (6 bis)*",
+            "group_count": 1,
+            "column_basis": "standard_form_total_column",
+            "disagreeing_sources": [
+              {
+                "page": 25,
+                "value": "1339068",
+                "unit": "EUR",
+                "snippet": "1 339 068",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": 18831,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              164,
+              165
+            ],
+            "texts": [
+              "18",
+              "831"
+            ],
+            "bbox": [
+              0.8875859,
+              0.9272779,
+              0.95349774,
+              0.94199211
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              162
+            ],
+            "texts": [
+              "2 - RÉSULTAT FINANCIER (V - VI)"
+            ],
+            "bbox": [
+              0.07642539,
+              0.92614604,
+              0.29437929,
+              0.94057728
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08050161,
+              0.51867574,
+              0.71440126,
+              0.53112622
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "GV",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 164610,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              41,
+              42
+            ],
+            "texts": [
+              "164",
+              "610"
+            ],
+            "bbox": [
+              0.88111602,
+              0.32173176,
+              0.95632831,
+              0.33503114
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              39
+            ],
+            "texts": [
+              "Impôts sur les bénéfices *"
+            ],
+            "bbox": [
+              0.07157299,
+              0.32031693,
+              0.21471896,
+              0.33305038
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08050161,
+              0.51867574,
+              0.71440126,
+              0.53112622
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "HK",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": [
+              {
+                "page": 25,
+                "snippet": "164 610",
+                "method": "label+geometry"
+              }
+            ]
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 4982524,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              54,
+              55,
+              56
+            ],
+            "texts": [
+              "4",
+              "982",
+              "524"
+            ],
+            "bbox": [
+              0.85847146,
+              0.20373515,
+              0.95147591,
+              0.21675156
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              52
+            ],
+            "texts": [
+              "Chiffres d'affaires nets *"
+            ],
+            "bbox": [
+              0.11686211,
+              0.20543294,
+              0.26041245,
+              0.21590267
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08050161,
+              0.51867574,
+              0.71440126,
+              0.53112622
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FL",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 4823303,
+          "passif_value": 4823303,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 2,
+            "bbox": [
+              0.8653457054500551,
+              0.9139297927210995,
+              0.95228464314714,
+              0.9266704496828249
+            ],
+            "snippet": "4 823 303"
+          },
+          "passif_source": {
+            "page": 3,
+            "bbox": [
+              0.8645369711458961,
+              0.7539637664238811,
+              0.9486453387784248,
+              0.765005669124043
+            ],
+            "snippet": "4 823 303"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "328024377",
+      "doc_id": "63e8ebbb54febda17c19ee7e",
+      "pdf": "data/328024377/bilans/pdf/bilan_2022-12-13_63e8ebbb54febda17c19ee7e.pdf",
+      "fiscal_year_end": "2022-06-30",
+      "input_sha256": "04eb5d11394871dc9a814faec4f766682ac99163f74f2b22fae0e9e15bb8a062",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 6233746,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 2,
+            "line_indexes": [
+              223
+            ],
+            "texts": [
+              "6 233 746"
+            ],
+            "bbox": [
+              0.8514958,
+              0.90441805,
+              0.93579832,
+              0.91724466
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 2,
+            "line_indexes": [
+              218
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.30292437,
+              0.90014252,
+              0.46951261,
+              0.91467933
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0730084,
+              0.51619952,
+              0.70426891,
+              0.52731591
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 2,
+            "line_indexes": [
+              37
+            ],
+            "texts": [
+              "30/06/2022"
+            ],
+            "bbox": [
+              0.84826891,
+              0.13368171,
+              0.94346218,
+              0.14650831
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 3,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 3036481,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 3,
+            "line_indexes": [
+              49
+            ],
+            "texts": [
+              "3 036 481"
+            ],
+            "bbox": [
+              0.85714286,
+              0.35686461,
+              0.94144538,
+              0.36912114
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 3,
+            "line_indexes": [
+              48
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.79058824,
+              0.35657957,
+              0.81398319,
+              0.37111639
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0730084,
+              0.51619952,
+              0.70426891,
+              0.52731591
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 1,
+            "column_basis": "nearest_right_code_fallback",
+            "disagreeing_sources": [
+              {
+                "page": 25,
+                "value": "3036482",
+                "unit": "EUR",
+                "snippet": "3 036 482",
+                "method": "label+geometry"
+              },
+              {
+                "page": 37,
+                "value": "3036482",
+                "unit": "EUR",
+                "snippet": "3 036 482",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1432377,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              84,
+              85
+            ],
+            "texts": [
+              "1 432",
+              "377"
+            ],
+            "bbox": [
+              0.84907563,
+              0.42185273,
+              0.94386555,
+              0.43610451
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              82
+            ],
+            "texts": [
+              "Autres achats et charges externes (3) (6 bis)*"
+            ],
+            "bbox": [
+              0.11253782,
+              0.42185273,
+              0.35858824,
+              0.43268409
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0730084,
+              0.51619952,
+              0.70426891,
+              0.52731591
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FW",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "disagreeing_sources": [
+              {
+                "page": 26,
+                "value": "93311",
+                "unit": "EUR",
+                "snippet": "93 311",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -76778,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              160
+            ],
+            "texts": [
+              "76 778)"
+            ],
+            "bbox": [
+              0.87287395,
+              0.9263658,
+              0.94709244,
+              0.94118765
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              157
+            ],
+            "texts": [
+              "2 - RÉSULTAT FINANCIER (V - VI)"
+            ],
+            "bbox": [
+              0.06534454,
+              0.92351544,
+              0.28194958,
+              0.93776722
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0730084,
+              0.51619952,
+              0.70426891,
+              0.52731591
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "GV",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "disagreeing_sources": [
+              {
+                "page": 26,
+                "value": "-95610",
+                "unit": "EUR",
+                "snippet": "-95 610",
+                "method": "label+geometry"
+              },
+              {
+                "page": 39,
+                "value": "18832",
+                "unit": "EUR",
+                "snippet": "18 832",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 125062,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              44,
+              45
+            ],
+            "texts": [
+              "125",
+              "062"
+            ],
+            "bbox": [
+              0.86964706,
+              0.3143943,
+              0.94346218,
+              0.3272209
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              46
+            ],
+            "texts": [
+              "Impôts sur les bénéfices *"
+            ],
+            "bbox": [
+              0.05969748,
+              0.31496437,
+              0.20248739,
+              0.32921615
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0730084,
+              0.51619952,
+              0.70426891,
+              0.52731591
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "HK",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "disagreeing_sources": [
+              {
+                "page": 26,
+                "value": "-39548",
+                "unit": "EUR",
+                "snippet": "-39 548",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 5564581,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              49,
+              50,
+              51
+            ],
+            "texts": [
+              "5",
+              "564",
+              "581"
+            ],
+            "bbox": [
+              0.85310924,
+              0.19980998,
+              0.94547899,
+              0.21235154
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              41
+            ],
+            "texts": [
+              "Chiffres d'affaires nets *"
+            ],
+            "bbox": [
+              0.11536134,
+              0.1992399,
+              0.25855462,
+              0.20950119
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0730084,
+              0.51619952,
+              0.70426891,
+              0.52731591
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FL",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 6233746,
+          "passif_value": 6233746,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 2,
+            "bbox": [
+              0.8514957983193276,
+              0.904418052256532,
+              0.9357983193277309,
+              0.9172446555819477
+            ],
+            "snippet": "6 233 746"
+          },
+          "passif_source": {
+            "page": 3,
+            "bbox": [
+              0.861579831932773,
+              0.7408076009501188,
+              0.9462857142857142,
+              0.753064133016627
+            ],
+            "snippet": "6 233 746"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "445070311",
+      "doc_id": "63e2481c916269756a09542b",
+      "pdf": "data/445070311/bilans/pdf/bilan_2022-02-14_63e2481c916269756a09542b.pdf",
+      "fiscal_year_end": "2020-06-30",
+      "input_sha256": "5cfaa73c6958ee19b7d22a08c0d5720488be75d0b2aa417384a45df4f755c02b",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 6449831,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 14,
+            "line_indexes": [
+              128
+            ],
+            "texts": [
+              "6 449 831"
+            ],
+            "bbox": [
+              0.86682353,
+              0.91268409,
+              0.93579832,
+              0.92437055
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 14,
+            "line_indexes": [
+              124
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL"
+            ],
+            "bbox": [
+              0.31744538,
+              0.91382423,
+              0.44410084,
+              0.92807601
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 14,
+            "line_indexes": [
+              3
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.84342857,
+              0.05472684,
+              0.92652101,
+              0.0664133
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "TOTAL GÉNÉRAL",
+            "group_count": 4,
+            "column_basis": "fiscal_year_header",
+            "disagreeing_sources": [
+              {
+                "page": 26,
+                "value": "306668",
+                "unit": "EUR",
+                "snippet": "306 668",
+                "method": "label+geometry"
+              },
+              {
+                "page": 26,
+                "value": "1153118",
+                "unit": "EUR",
+                "snippet": "1 153 118",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1009387,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 16,
+            "line_indexes": [
+              48
+            ],
+            "texts": [
+              "1 009 387"
+            ],
+            "bbox": [
+              0.83495798,
+              0.44693587,
+              0.90393277,
+              0.45862233
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 16,
+            "line_indexes": [
+              46
+            ],
+            "texts": [
+              "Autres achats et charges externes"
+            ],
+            "bbox": [
+              0.10406723,
+              0.44836105,
+              0.32631933,
+              0.46004751
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 16,
+            "line_indexes": [
+              4
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.83294118,
+              0.08209026,
+              0.91643697,
+              0.09377672
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Autres achats et charges externes",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 386183,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 17,
+            "line_indexes": [
+              62
+            ],
+            "texts": [
+              "386 183"
+            ],
+            "bbox": [
+              0.85109244,
+              0.70631829,
+              0.90796639,
+              0.71800475
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 17,
+            "line_indexes": [
+              60
+            ],
+            "texts": [
+              "Impôts sur les bénéfices"
+            ],
+            "bbox": [
+              0.1032605,
+              0.70660333,
+              0.26339496,
+              0.71942993
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 17,
+            "line_indexes": [
+              4
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.83576471,
+              0.08209026,
+              0.91885714,
+              0.09377672
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Impôts sur les bénéfices",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 5464059,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 16,
+            "line_indexes": [
+              22
+            ],
+            "texts": [
+              "5 464 059"
+            ],
+            "bbox": [
+              0.8337479,
+              0.24769596,
+              0.90312605,
+              0.25938242
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 16,
+            "line_indexes": [
+              23
+            ],
+            "texts": [
+              "Chiffres d'affaires nets"
+            ],
+            "bbox": [
+              0.10285714,
+              0.25054632,
+              0.26137815,
+              0.2608076
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 16,
+            "line_indexes": [
+              4
+            ],
+            "texts": [
+              "au 30/06/20"
+            ],
+            "bbox": [
+              0.83294118,
+              0.08209026,
+              0.91643697,
+              0.09377672
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Chiffres d'affaires nets",
+            "group_count": 4,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "passif_total_not_found"
+        }
+      ]
+    },
+    {
+      "siren": "445070311",
+      "doc_id": "65a4095d5fd178b16b09b860",
+      "pdf": "data/445070311/bilans/pdf/bilan_2023-11-21_65a4095d5fd178b16b09b860.pdf",
+      "fiscal_year_end": "2022-06-30",
+      "input_sha256": "ad8a3bab7ef5a5a4e7049786c853113e1884be06bd7476d6ad9ffd1d97f72fa8",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 8574015,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 23,
+            "line_indexes": [
+              132
+            ],
+            "texts": [
+              "8 574 015"
+            ],
+            "bbox": [
+              0.86255542,
+              0.90958357,
+              0.92906086,
+              0.91985168
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 23,
+            "line_indexes": [
+              128
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL"
+            ],
+            "bbox": [
+              0.31680774,
+              0.90958357,
+              0.43893591,
+              0.91985168
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 23,
+            "line_indexes": [
+              3
+            ],
+            "texts": [
+              "au 30/06/22"
+            ],
+            "bbox": [
+              0.84441757,
+              0.04991443,
+              0.92704554,
+              0.06160867
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "TOTAL GÉNÉRAL",
+            "group_count": 4,
+            "column_basis": "fiscal_year_header",
+            "disagreeing_sources": [
+              {
+                "page": 47,
+                "value": "108000",
+                "unit": "EUR",
+                "snippet": "108 000",
+                "method": "label+geometry"
+              },
+              {
+                "page": 47,
+                "value": "1641266",
+                "unit": "EUR",
+                "snippet": "1 641 266",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 540838,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.827,
+          "value_source": {
+            "page": 29,
+            "line_indexes": [
+              76
+            ],
+            "texts": [
+              "540 838"
+            ],
+            "bbox": [
+              0.84804514,
+              0.70079863,
+              0.90286175,
+              0.71106674
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 29,
+            "line_indexes": [
+              74
+            ],
+            "texts": [
+              "Impôts sur les bénéfices"
+            ],
+            "bbox": [
+              0.10681177,
+              0.70079863,
+              0.26400645,
+              0.71106674
+            ],
+            "role": "label"
+          },
+          "unit_source": null,
+          "period_source": {
+            "page": 29,
+            "line_indexes": [
+              4
+            ],
+            "texts": [
+              "au 30/06/22"
+            ],
+            "bbox": [
+              0.83272873,
+              0.07872219,
+              0.9165659,
+              0.09070165
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "form_default_EUR_no_contrary_scale",
+            "statement_score": 20,
+            "primary_statement_score": 20,
+            "anchor_text": "Impôts sur les bénéfices",
+            "group_count": 2,
+            "column_basis": "fiscal_year_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "passif_total_not_found"
+        }
+      ]
+    },
+    {
+      "siren": "445070311",
+      "doc_id": "6860f28ca0138eae340c7453",
+      "pdf": "data/445070311/bilans/pdf/bilan_2025-05-15_6860f28ca0138eae340c7453.pdf",
+      "fiscal_year_end": "2023-06-30",
+      "input_sha256": "4cef34fdba2df6823ddd5552fbe94c0919b369d112356ac13df356bfea347587",
+      "accepted": [],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "not_attempted",
+          "reason": "assets_missing"
+        }
+      ]
+    },
+    {
+      "siren": "504304205",
+      "doc_id": "63e13943526e1f30cd100db5",
+      "pdf": "data/504304205/bilans/pdf/bilan_2017-05-31_63e13943526e1f30cd100db5.pdf",
+      "fiscal_year_end": "2016-12-31",
+      "input_sha256": "2917679d8a52cdb90086c6f7954c0a630f9a4b409143cde0a6ecaf59cad05d15",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1807858,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              253,
+              254
+            ],
+            "texts": [
+              "1 807",
+              "858"
+            ],
+            "bbox": [
+              0.71117057,
+              0.91809976,
+              0.80508361,
+              0.92950119
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              246
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.15331104,
+              0.91524941,
+              0.32307692,
+              0.92978622
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 4,
+            "line_indexes": [
+              269
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.03812709,
+              0.9768171,
+              0.16173913,
+              0.98650831
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 4,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 1147625,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              62,
+              63,
+              64
+            ],
+            "texts": [
+              "1",
+              "147",
+              "625"
+            ],
+            "bbox": [
+              0.70394649,
+              0.34045184,
+              0.79705686,
+              0.35300832
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              61
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.62729097,
+              0.34102259,
+              0.65297659,
+              0.3544352
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              171
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.04133779,
+              0.9791201,
+              0.16254181,
+              0.98596908
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 2,
+            "column_basis": "geometric_prior",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 385028,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              86,
+              87
+            ],
+            "texts": [
+              "385",
+              "028"
+            ],
+            "bbox": [
+              0.72361204,
+              0.40285714,
+              0.79906355,
+              0.41742857
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              84
+            ],
+            "texts": [
+              "Autres achats et charges externes (3) (6 bis) *"
+            ],
+            "bbox": [
+              0.08227425,
+              0.40485714,
+              0.33230769,
+              0.41657143
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              192
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.04334448,
+              0.97914286,
+              0.16575251,
+              0.98742857
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FW",
+            "group_count": 2,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -20300,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              182
+            ],
+            "texts": [
+              "(20 300)"
+            ],
+            "bbox": [
+              0.72842809,
+              0.93714286,
+              0.80869565,
+              0.95257143
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              180
+            ],
+            "texts": [
+              "2 - RÉSULTAT FINANCIER (V - VI)"
+            ],
+            "bbox": [
+              0.04896321,
+              0.938,
+              0.26688963,
+              0.95171429
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              192
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.04334448,
+              0.97914286,
+              0.16575251,
+              0.98742857
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "GV",
+            "group_count": 2,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 1146,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 7,
+            "line_indexes": [
+              46
+            ],
+            "texts": [
+              "1 146"
+            ],
+            "bbox": [
+              0.74207358,
+              0.33902497,
+              0.80026756,
+              0.3544352
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 7,
+            "line_indexes": [
+              44
+            ],
+            "texts": [
+              "Impôts sur les bénéfices"
+            ],
+            "bbox": [
+              0.0477592,
+              0.34130797,
+              0.18140468,
+              0.35158145
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 7,
+            "line_indexes": [
+              143
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.04093645,
+              0.97740785,
+              0.16454849,
+              0.98596908
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "HK",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 1048023,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              49,
+              50,
+              51
+            ],
+            "texts": [
+              "1",
+              "048",
+              "023"
+            ],
+            "bbox": [
+              0.70474916,
+              0.168,
+              0.79785953,
+              0.18114286
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              42
+            ],
+            "texts": [
+              "Chiffres d'affaires nets*"
+            ],
+            "bbox": [
+              0.08307692,
+              0.17,
+              0.22474916,
+              0.18028571
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              192
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.04334448,
+              0.97914286,
+              0.16575251,
+              0.98742857
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FL",
+            "group_count": 2,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 1807858,
+          "passif_value": 1807858,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 4,
+            "bbox": [
+              0.7111705685618728,
+              0.9180997624703088,
+              0.8050836120401337,
+              0.929501187648456
+            ],
+            "snippet": "1 807 858"
+          },
+          "passif_source": {
+            "page": 5,
+            "bbox": [
+              0.7023411371237457,
+              0.7456837098692033,
+              0.7978595317725752,
+              0.7593816884661118
+            ],
+            "snippet": "1 807 858"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "504304205",
+      "doc_id": "63e13943526e1f30cd100db6",
+      "pdf": "data/504304205/bilans/pdf/bilan_2018-10-24_63e13943526e1f30cd100db6.pdf",
+      "fiscal_year_end": "2017-12-31",
+      "input_sha256": "2f5aecdcd5d2a3e868fe6d427f8e108b513af4863c72a79d2d7486bc8aa10f50",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1717114,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              250
+            ],
+            "texts": [
+              "1 717 114"
+            ],
+            "bbox": [
+              0.70588235,
+              0.91701068,
+              0.80107563,
+              0.93039146
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              243
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.1492437,
+              0.91501779,
+              0.31744538,
+              0.92982206
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 4,
+            "line_indexes": [
+              265
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.03347899,
+              0.97679715,
+              0.15852101,
+              0.98647687
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "Co",
+            "group_count": 4,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 1191897,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              55
+            ],
+            "texts": [
+              "1 191 897"
+            ],
+            "bbox": [
+              0.69942857,
+              0.33992883,
+              0.79381513,
+              0.35302491
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              54
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.62521008,
+              0.34049822,
+              0.65102521,
+              0.3541637
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              146
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.03630252,
+              0.97822064,
+              0.15610084,
+              0.98505338
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 2,
+            "column_basis": "geometric_prior",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 364789,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              85,
+              86
+            ],
+            "texts": [
+              "364",
+              "789"
+            ],
+            "bbox": [
+              0.71838926,
+              0.40389549,
+              0.79409396,
+              0.41700713
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              83
+            ],
+            "texts": [
+              "Autres achats et charges externes (3) (6 bis) *"
+            ],
+            "bbox": [
+              0.07852349,
+              0.40389549,
+              0.32657718,
+              0.41558195
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              185
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.03422819,
+              0.97767221,
+              0.15624161,
+              0.98593824
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FW",
+            "group_count": 2,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -13520,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              176,
+              177
+            ],
+            "texts": [
+              "(13",
+              "520)"
+            ],
+            "bbox": [
+              0.72120805,
+              0.93862233,
+              0.79731544,
+              0.95173397
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              174
+            ],
+            "texts": [
+              "2 - RÉSULTAT FINANCIER (V - VI)"
+            ],
+            "bbox": [
+              0.03946309,
+              0.93719715,
+              0.25691275,
+              0.95002375
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              185
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.03422819,
+              0.97767221,
+              0.15624161,
+              0.98593824
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "GV",
+            "group_count": 2,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 1146,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 7,
+            "line_indexes": [
+              51,
+              52
+            ],
+            "texts": [
+              "1",
+              "146"
+            ],
+            "bbox": [
+              0.89384874,
+              0.34049822,
+              0.94910924,
+              0.35302491
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 7,
+            "line_indexes": [
+              47
+            ],
+            "texts": [
+              "Impôts sur les bénéfices"
+            ],
+            "bbox": [
+              0.04436975,
+              0.34078292,
+              0.17868908,
+              0.35103203
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 7,
+            "line_indexes": [
+              147
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.0354958,
+              0.97679715,
+              0.15771429,
+              0.98562278
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "HK",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 964484,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              45,
+              46
+            ],
+            "texts": [
+              "964",
+              "484"
+            ],
+            "bbox": [
+              0.71959732,
+              0.1695962,
+              0.79328859,
+              0.18213777
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              39
+            ],
+            "texts": [
+              "Chiffres d'affaires nets*"
+            ],
+            "bbox": [
+              0.07932886,
+              0.1695962,
+              0.22026846,
+              0.17928741
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 6,
+            "line_indexes": [
+              185
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.03422819,
+              0.97767221,
+              0.15624161,
+              0.98593824
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FL",
+            "group_count": 2,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 1717114,
+          "passif_value": 1717114,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 4,
+            "bbox": [
+              0.7058823529411764,
+              0.9170106761565835,
+              0.8010756302521007,
+              0.930391459074733
+            ],
+            "snippet": "1 717 114"
+          },
+          "passif_source": {
+            "page": 5,
+            "bbox": [
+              0.6994285714285713,
+              0.7467615658362988,
+              0.7934117647058823,
+              0.7584341637010675
+            ],
+            "snippet": "1 717 114"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "504304205",
+      "doc_id": "66cd893cedec9b09d50191e8",
+      "pdf": "data/504304205/bilans/pdf/bilan_2024-08-06_66cd893cedec9b09d50191e8.pdf",
+      "fiscal_year_end": "2020-12-31",
+      "input_sha256": "297dd7aca7194914148481f42535b10f4d5a53ef3d2c9ac2dfb30257e98a6dee",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1689390,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              256,
+              257,
+              258
+            ],
+            "texts": [
+              "1",
+              "689",
+              "390"
+            ],
+            "bbox": [
+              0.69594865,
+              0.86951564,
+              0.78419574,
+              0.88034185
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              249
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.16526273,
+              0.86723644,
+              0.31608503,
+              0.88091166
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 4,
+            "line_indexes": [
+              275
+            ],
+            "texts": [
+              "Dossier No SOMEP en Euros."
+            ],
+            "bbox": [
+              0.05535499,
+              0.92136749,
+              0.16967509,
+              0.93361821
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 4,
+            "column_basis": "net_header",
+            "disagreeing_sources": [
+              {
+                "page": 23,
+                "value": "1618858",
+                "unit": "EUR",
+                "snippet": "1 618 858",
+                "method": "label+geometry"
+              }
+            ],
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 1010320,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              61,
+              62,
+              63
+            ],
+            "texts": [
+              "1",
+              "010",
+              "320"
+            ],
+            "bbox": [
+              0.72081828,
+              0.33703703,
+              0.80986762,
+              0.34814814
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              60
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.64861612,
+              0.33732193,
+              0.67148014,
+              0.34900284
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 5,
+            "line_indexes": [
+              162
+            ],
+            "texts": [
+              "Dossier N° SOMEP en Euros."
+            ],
+            "bbox": [
+              0.09105495,
+              0.9267806,
+              0.20296831,
+              0.93361821
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_page_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 2,
+            "column_basis": "geometric_prior",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 1689390,
+          "passif_value": 1689390,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 4,
+            "bbox": [
+              0.6959486477181439,
+              0.8695156443157533,
+              0.7841957384950844,
+              0.8803418548282038
+            ],
+            "snippet": "1 689 390"
+          },
+          "passif_source": {
+            "page": 5,
+            "bbox": [
+              0.7216205286714357,
+              0.7119657913319357,
+              0.8102687425882713,
+              0.7230769021210295
+            ],
+            "snippet": "1 689 390"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "401009741",
+      "doc_id": "63e881158be6eb9f9d1ff975",
+      "pdf": "data/401009741/bilans/pdf/bilan_2022-11-30_63e881158be6eb9f9d1ff975.pdf",
+      "fiscal_year_end": "2022-04-30",
+      "input_sha256": "b84e74f63d44e1177728f5f09210fc81567294daa61562327922df24dce7cf4a",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 945632,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 2,
+            "line_indexes": [
+              238,
+              239
+            ],
+            "texts": [
+              "945",
+              "632"
+            ],
+            "bbox": [
+              0.88213996,
+              0.91697574,
+              0.94730488,
+              0.9281027
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 2,
+            "line_indexes": [
+              232
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.31818181,
+              0.91269614,
+              0.48270313,
+              0.92667616
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 8,
+            "line_indexes": [
+              21
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08133013,
+              0.53552068,
+              0.71193913,
+              0.54778887
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 2,
+            "line_indexes": [
+              28
+            ],
+            "texts": [
+              "30/04/2022"
+            ],
+            "bbox": [
+              0.84714399,
+              0.15121255,
+              0.94448912,
+              0.16462197
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 3,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 532640,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 3,
+            "line_indexes": [
+              57,
+              58
+            ],
+            "texts": [
+              "532",
+              "640"
+            ],
+            "bbox": [
+              0.88213996,
+              0.37146932,
+              0.94810939,
+              0.38288159
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 3,
+            "line_indexes": [
+              55
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.79806917,
+              0.36661911,
+              0.82099757,
+              0.38659058
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 8,
+            "line_indexes": [
+              21
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08133013,
+              0.53552068,
+              0.71193913,
+              0.54778887
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 1,
+            "column_basis": "nearest_right_code_fallback",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 297253,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.84,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              81,
+              82
+            ],
+            "texts": [
+              "297",
+              "253"
+            ],
+            "bbox": [
+              0.87078649,
+              0.43519045,
+              0.94502405,
+              0.44769755
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              80
+            ],
+            "texts": [
+              "Autres achats et charges externes (3) (6 bis)*"
+            ],
+            "bbox": [
+              0.11998395,
+              0.43519045,
+              0.36316211,
+              0.44485503
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 8,
+            "line_indexes": [
+              21
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08133013,
+              0.53552068,
+              0.71193913,
+              0.54778887
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "Autres achats et charges externes (3) (6 bis)*",
+            "group_count": 1,
+            "column_basis": "standard_form_total_column",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -2778,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              157,
+              158
+            ],
+            "texts": [
+              "2",
+              "778)"
+            ],
+            "bbox": [
+              0.89285712,
+              0.93348493,
+              0.95425358,
+              0.94769755
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              154
+            ],
+            "texts": [
+              "2 - RÉSULTAT FINANCIER (V - VI)"
+            ],
+            "bbox": [
+              0.0806581,
+              0.9300739,
+              0.29574638,
+              0.94485502
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 8,
+            "line_indexes": [
+              21
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08133013,
+              0.53552068,
+              0.71193913,
+              0.54778887
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "GV",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 63846,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              47,
+              48
+            ],
+            "texts": [
+              "63",
+              "846"
+            ],
+            "bbox": [
+              0.88683786,
+              0.32717453,
+              0.95064203,
+              0.33996589
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              46
+            ],
+            "texts": [
+              "Impôts sur les bénéfices *"
+            ],
+            "bbox": [
+              0.07784911,
+              0.32575327,
+              0.22030497,
+              0.33882888
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 8,
+            "line_indexes": [
+              21
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08133013,
+              0.53552068,
+              0.71193913,
+              0.54778887
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "HK",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 1800826,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.857,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              49,
+              50,
+              51
+            ],
+            "texts": [
+              "1",
+              "800",
+              "826"
+            ],
+            "bbox": [
+              0.85152486,
+              0.21489482,
+              0.94582662,
+              0.22740193
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              42
+            ],
+            "texts": [
+              "Chiffres d’affaires nets *"
+            ],
+            "bbox": [
+              0.11958266,
+              0.21375782,
+              0.2624398,
+              0.22455941
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 8,
+            "line_indexes": [
+              21
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.08133013,
+              0.53552068,
+              0.71193913,
+              0.54778887
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "Chiffres d’affaires nets *",
+            "group_count": 3,
+            "column_basis": "standard_form_total_column",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 945632,
+          "passif_value": 945632,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 2,
+            "bbox": [
+              0.882139962251991,
+              0.9169757356234528,
+              0.9473048842240943,
+              0.9281026969455793
+            ],
+            "snippet": "945 632"
+          },
+          "passif_source": {
+            "page": 3,
+            "bbox": [
+              0.882139962251991,
+              0.7523537693960937,
+              0.9481093894336264,
+              0.7637660374187876
+            ],
+            "snippet": "945 632"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "401009741",
+      "doc_id": "65784e5da67d84faf4042736",
+      "pdf": "data/401009741/bilans/pdf/bilan_2023-11-20_65784e5da67d84faf4042736.pdf",
+      "fiscal_year_end": "2023-04-30",
+      "input_sha256": "8ecc42696192ef6c5fc8c251812ab723e7ab72e9b231e53896fb0ac7e0e76f2c",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1014105,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 4,
+            "line_indexes": [
+              231
+            ],
+            "texts": [
+              "1 014 105"
+            ],
+            "bbox": [
+              0.86323409,
+              0.91934112,
+              0.95132741,
+              0.9326896
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 4,
+            "line_indexes": [
+              226
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.31456154,
+              0.91536498,
+              0.48189862,
+              0.93013351
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 10,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0792119,
+              0.54089486,
+              0.71129875,
+              0.55371903
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 4,
+            "line_indexes": [
+              32
+            ],
+            "texts": [
+              "30/04/2023"
+            ],
+            "bbox": [
+              0.85358003,
+              0.14938938,
+              0.94851164,
+              0.1610338
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 3,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 658859,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 5,
+            "line_indexes": [
+              55,
+              56
+            ],
+            "texts": [
+              "658",
+              "859"
+            ],
+            "bbox": [
+              0.88616249,
+              0.37214611,
+              0.95414318,
+              0.38470319
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 5,
+            "line_indexes": [
+              54
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.80128719,
+              0.37157533,
+              0.8258246,
+              0.38727168
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 10,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0792119,
+              0.54089486,
+              0.71129875,
+              0.55371903
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 1,
+            "column_basis": "nearest_right_code_fallback",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 329158,
+          "unit": "EUR",
+          "method": "label+geometry",
+          "heuristic_ranking_score": 0.84,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              90,
+              91
+            ],
+            "texts": [
+              "329",
+              "158"
+            ],
+            "bbox": [
+              0.87570392,
+              0.4336938,
+              0.95052291,
+              0.4467843
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              89
+            ],
+            "texts": [
+              "Autres achats et charges externes (3) (6 bis)*"
+            ],
+            "bbox": [
+              0.11383749,
+              0.4336938,
+              0.36122284,
+              0.44479227
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 10,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0792119,
+              0.54089486,
+              0.71129875,
+              0.55371903
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "Autres achats et charges externes (3) (6 bis)*",
+            "group_count": 1,
+            "column_basis": "standard_form_total_column",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -2096,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              167,
+              168
+            ],
+            "texts": [
+              "2",
+              "096)"
+            ],
+            "bbox": [
+              0.89662106,
+              0.93938533,
+              0.95897021,
+              0.95361413
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              164
+            ],
+            "texts": [
+              "2 - RÉSULTAT FINANCIER (V - VI)"
+            ],
+            "bbox": [
+              0.07441673,
+              0.93540127,
+              0.29243764,
+              0.95076837
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 10,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0792119,
+              0.54089486,
+              0.71129875,
+              0.55371903
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "GV",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 53240,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 7,
+            "line_indexes": [
+              42,
+              43
+            ],
+            "texts": [
+              "53",
+              "240"
+            ],
+            "bbox": [
+              0.89300078,
+              0.32384747,
+              0.95695895,
+              0.33750712
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 7,
+            "line_indexes": [
+              41
+            ],
+            "texts": [
+              "Impôts sur les bénéfices *"
+            ],
+            "bbox": [
+              0.07441673,
+              0.32413205,
+              0.21761866,
+              0.33693797
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 10,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0792119,
+              0.54089486,
+              0.71129875,
+              0.55371903
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "HK",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 1805459,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 6,
+            "line_indexes": [
+              53,
+              54,
+              55
+            ],
+            "texts": [
+              "1",
+              "805",
+              "459"
+            ],
+            "bbox": [
+              0.85478679,
+              0.21087081,
+              0.95052291,
+              0.22424588
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 6,
+            "line_indexes": [
+              45
+            ],
+            "texts": [
+              "Chiffres d'affaires nets *"
+            ],
+            "bbox": [
+              0.11383749,
+              0.21001708,
+              0.25985518,
+              0.22168469
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 10,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.0792119,
+              0.54089486,
+              0.71129875,
+              0.55371903
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "FL",
+            "group_count": 1,
+            "column_basis": "first_group_right_of_code",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 1014105,
+          "passif_value": 1014105,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 4,
+            "bbox": [
+              0.8632340898279857,
+              0.9193411201840934,
+              0.9513274102717549,
+              0.9326896010764791
+            ],
+            "snippet": "1 014 105"
+          },
+          "passif_source": {
+            "page": 5,
+            "bbox": [
+              0.8672566158756464,
+              0.7568492952934867,
+              0.9549476837146496,
+              0.7705479250725543
+            ],
+            "snippet": "1 014 105"
+          }
+        }
+      ]
+    },
+    {
+      "siren": "401009741",
+      "doc_id": "68f0a715f28d8aaf48046416",
+      "pdf": "data/401009741/bilans/pdf/bilan_2025-10-03_68f0a715f28d8aaf48046416.pdf",
+      "fiscal_year_end": "2025-04-30",
+      "input_sha256": "797052e0d9687f23dd19203f510bc3bc82edb2a684e22833f8397b874e75d991",
+      "accepted": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1135864,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.98,
+          "value_source": {
+            "page": 2,
+            "line_indexes": [
+              201
+            ],
+            "texts": [
+              "1 135 864"
+            ],
+            "bbox": [
+              0.88145159,
+              0.92669709,
+              0.96451611,
+              0.93839133
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 2,
+            "line_indexes": [
+              196
+            ],
+            "texts": [
+              "TOTAL GÉNÉRAL (I à VI)"
+            ],
+            "bbox": [
+              0.3282258,
+              0.92070736,
+              0.49717741,
+              0.93553907
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 4,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.10604838,
+              0.52738163,
+              0.71814515,
+              0.54107245
+            ],
+            "role": "unit"
+          },
+          "period_source": {
+            "page": 2,
+            "line_indexes": [
+              30
+            ],
+            "texts": [
+              "30/04/2025"
+            ],
+            "bbox": [
+              0.87016127,
+              0.1543069,
+              0.96733869,
+              0.16714204
+            ],
+            "role": "period"
+          },
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "CO",
+            "group_count": 3,
+            "column_basis": "net_header",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 595725,
+          "unit": "EUR",
+          "method": "code+geometry",
+          "heuristic_ranking_score": 0.9,
+          "value_source": {
+            "page": 3,
+            "line_indexes": [
+              54
+            ],
+            "texts": [
+              "595 725"
+            ],
+            "bbox": [
+              0.89838708,
+              0.37934969,
+              0.96693546,
+              0.3930405
+            ],
+            "role": "value"
+          },
+          "label_source": {
+            "page": 3,
+            "line_indexes": [
+              53
+            ],
+            "texts": [
+              "DL"
+            ],
+            "bbox": [
+              0.81532256,
+              0.37849401,
+              0.83830643,
+              0.39503708
+            ],
+            "role": "label"
+          },
+          "unit_source": {
+            "page": 4,
+            "line_indexes": [
+              20
+            ],
+            "texts": [
+              "Seules sont exprimées les informations significatives. Sauf mention, les montants sont exprimés en euros."
+            ],
+            "bbox": [
+              0.10604838,
+              0.52738163,
+              0.71814515,
+              0.54107245
+            ],
+            "role": "unit"
+          },
+          "period_source": null,
+          "diagnostics": {
+            "unit_basis": "explicit_document_EUR",
+            "statement_score": 20,
+            "primary_statement_score": 30,
+            "anchor_text": "DL",
+            "group_count": 1,
+            "column_basis": "nearest_right_code_fallback",
+            "equivalent_sources": []
+          },
+          "derivation": null
+        }
+      ],
+      "issues": [
+        {
+          "status": "not_found",
+          "field_key": "PL_REVENUE_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "not_found",
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "page": null,
+          "message": "supported statement exists but no defensible candidate was found",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CAPITAL_EQUITY_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "BS_CASH_CURRENT_ASSET_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_COGS_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "definition_unresolved",
+          "field_key": "PL_DEPRECIATION_AMORTIZATION_FRGAAP",
+          "page": null,
+          "message": "field intentionally deferred because the supplied catalogue is semantically ambiguous",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "META_AVG_WORKFORCE_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        },
+        {
+          "status": "not_implemented",
+          "field_key": "PL_PERSONNEL_COSTS_FRGAAP",
+          "page": null,
+          "message": "P1 field not enabled in the deterministic MVP",
+          "details": {}
+        }
+      ],
+      "checks": [
+        {
+          "check": "assets_vs_passif",
+          "status": "passed",
+          "asset_value": 1135864,
+          "passif_value": 1135864,
+          "delta": 0,
+          "tolerance_reporting_units": 1,
+          "asset_source": {
+            "page": 2,
+            "bbox": [
+              0.8814515948254248,
+              0.9266970880128778,
+              0.9645161092508765,
+              0.9383913264273216
+            ],
+            "snippet": "1 135 864"
+          },
+          "passif_source": {
+            "page": 3,
+            "bbox": [
+              0.8806451432290612,
+              0.7646891021737535,
+              0.9653225608472401,
+              0.7763833405881974
+            ],
+            "snippet": "1 135 864"
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The MVP implements six P0 fields only; two P1 fields are left disabled and four catalogue definitions remain unresolved.",
+    "A French-form EUR default is used only when no contrary scale cue is found; that basis is exposed per candidate.",
+    "Consistency checks are validation evidence, not a substitute for independently reviewed ground truth.",
+    "The supplied OCR can contain reading errors; accepted values preserve the exact OCR snippet and bbox used."
+  ]
+}

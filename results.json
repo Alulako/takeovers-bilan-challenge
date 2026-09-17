@@ -1,0 +1,856 @@
+{
+  "documents": [
+    {
+      "pdf": "data/820561470/bilans/pdf/bilan_2023-06-05_6493e4372f502414800f8164.pdf",
+      "siren": "820561470",
+      "fiscal_year_end": "2021-08-31",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 638962,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.75425103,
+            0.85902466,
+            0.80809718,
+            0.87107623
+          ],
+          "snippet": "638 962"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 322009,
+          "unit": "EUR",
+          "page": 7,
+          "bbox": [
+            0.76153848,
+            0.38733184,
+            0.81457492,
+            0.3993834
+          ],
+          "snippet": "322 009"
+        }
+      ]
+    },
+    {
+      "pdf": "data/820561470/bilans/pdf/bilan_2023-06-13_6543d3fd08093cdace058668.pdf",
+      "siren": "820561470",
+      "fiscal_year_end": "2022-08-31",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 638554,
+          "unit": "EUR",
+          "page": 3,
+          "bbox": [
+            0.74504252,
+            0.85878398,
+            0.80169975,
+            0.87111236
+          ],
+          "snippet": "638 554"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 438221,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.75151763,
+            0.38619141,
+            0.80412791,
+            0.39854056
+          ],
+          "snippet": "438 221"
+        }
+      ]
+    },
+    {
+      "pdf": "data/820561470/bilans/pdf/bilan_2024-01-15_67458f18cea78a70070fa226.pdf",
+      "siren": "820561470",
+      "fiscal_year_end": "2023-08-31",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 866478,
+          "unit": "EUR",
+          "page": 1,
+          "bbox": [
+            0.75768262,
+            0.87231317,
+            0.81007557,
+            0.88284698
+          ],
+          "snippet": "866 478"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 460510,
+          "unit": "EUR",
+          "page": 2,
+          "bbox": [
+            0.7572796,
+            0.37836299,
+            0.80926952,
+            0.38918149
+          ],
+          "snippet": "460 510"
+        }
+      ]
+    },
+    {
+      "pdf": "data/328024377/bilans/pdf/bilan_2020-12-24_63e8ebbb54febda17c19ee7c.pdf",
+      "siren": "328024377",
+      "fiscal_year_end": "2020-06-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 3500529,
+          "unit": "EUR",
+          "page": 2,
+          "bbox": [
+            0.73976471,
+            0.69206651,
+            0.78978151,
+            0.70090261
+          ],
+          "snippet": "3 500 529"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 2365051,
+          "unit": "EUR",
+          "page": 3,
+          "bbox": [
+            0.74178151,
+            0.36342043,
+            0.79341176,
+            0.37168646
+          ],
+          "snippet": "2 365 051"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1182000,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.49532773,
+            0.38679335,
+            0.54252101,
+            0.39562945
+          ],
+          "snippet": "1 182 000"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": 357,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.51872269,
+            0.56551069,
+            0.54252101,
+            0.5752019
+          ],
+          "snippet": "357"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 31566,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.50863866,
+            0.6823753,
+            0.54252101,
+            0.69092637
+          ],
+          "snippet": "31 566"
+        }
+      ]
+    },
+    {
+      "pdf": "data/328024377/bilans/pdf/bilan_2021-12-17_63e8ebbb54febda17c19ee7d.pdf",
+      "siren": "328024377",
+      "fiscal_year_end": "2021-06-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 4823303,
+          "unit": "EUR",
+          "page": 2,
+          "bbox": [
+            0.86534571,
+            0.91392979,
+            0.95228464,
+            0.92667045
+          ],
+          "snippet": "4 823 303"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 2816959,
+          "unit": "EUR",
+          "page": 3,
+          "bbox": [
+            0.8617064,
+            0.37061155,
+            0.95066717,
+            0.38420159
+          ],
+          "snippet": "2 816 959"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1339065,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.85847146,
+            0.42331637,
+            0.95228464,
+            0.43803057
+          ],
+          "snippet": "1 339 065"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": 18831,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.8875859,
+            0.9272779,
+            0.95349774,
+            0.94199211
+          ],
+          "snippet": "18 831"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 164610,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.88111602,
+            0.32173176,
+            0.95632831,
+            0.33503114
+          ],
+          "snippet": "164 610"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 4982524,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.85847146,
+            0.20373515,
+            0.95147591,
+            0.21675156
+          ],
+          "snippet": "4 982 524"
+        }
+      ]
+    },
+    {
+      "pdf": "data/328024377/bilans/pdf/bilan_2022-12-13_63e8ebbb54febda17c19ee7e.pdf",
+      "siren": "328024377",
+      "fiscal_year_end": "2022-06-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 6233746,
+          "unit": "EUR",
+          "page": 2,
+          "bbox": [
+            0.8514958,
+            0.90441805,
+            0.93579832,
+            0.91724466
+          ],
+          "snippet": "6 233 746"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 3036481,
+          "unit": "EUR",
+          "page": 3,
+          "bbox": [
+            0.85714286,
+            0.35686461,
+            0.94144538,
+            0.36912114
+          ],
+          "snippet": "3 036 481"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1432377,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.84907563,
+            0.42185273,
+            0.94386555,
+            0.43610451
+          ],
+          "snippet": "1 432 377"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -76778,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.87287395,
+            0.9263658,
+            0.94709244,
+            0.94118765
+          ],
+          "snippet": "76 778)"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 125062,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.86964706,
+            0.3143943,
+            0.94346218,
+            0.3272209
+          ],
+          "snippet": "125 062"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 5564581,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.85310924,
+            0.19980998,
+            0.94547899,
+            0.21235154
+          ],
+          "snippet": "5 564 581"
+        }
+      ]
+    },
+    {
+      "pdf": "data/445070311/bilans/pdf/bilan_2022-02-14_63e2481c916269756a09542b.pdf",
+      "siren": "445070311",
+      "fiscal_year_end": "2020-06-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 6449831,
+          "unit": "EUR",
+          "page": 14,
+          "bbox": [
+            0.86682353,
+            0.91268409,
+            0.93579832,
+            0.92437055
+          ],
+          "snippet": "6 449 831"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 1009387,
+          "unit": "EUR",
+          "page": 16,
+          "bbox": [
+            0.83495798,
+            0.44693587,
+            0.90393277,
+            0.45862233
+          ],
+          "snippet": "1 009 387"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 386183,
+          "unit": "EUR",
+          "page": 17,
+          "bbox": [
+            0.85109244,
+            0.70631829,
+            0.90796639,
+            0.71800475
+          ],
+          "snippet": "386 183"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 5464059,
+          "unit": "EUR",
+          "page": 16,
+          "bbox": [
+            0.8337479,
+            0.24769596,
+            0.90312605,
+            0.25938242
+          ],
+          "snippet": "5 464 059"
+        }
+      ]
+    },
+    {
+      "pdf": "data/445070311/bilans/pdf/bilan_2023-11-21_65a4095d5fd178b16b09b860.pdf",
+      "siren": "445070311",
+      "fiscal_year_end": "2022-06-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 8574015,
+          "unit": "EUR",
+          "page": 23,
+          "bbox": [
+            0.86255542,
+            0.90958357,
+            0.92906086,
+            0.91985168
+          ],
+          "snippet": "8 574 015"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 540838,
+          "unit": "EUR",
+          "page": 29,
+          "bbox": [
+            0.84804514,
+            0.70079863,
+            0.90286175,
+            0.71106674
+          ],
+          "snippet": "540 838"
+        }
+      ]
+    },
+    {
+      "pdf": "data/445070311/bilans/pdf/bilan_2025-05-15_6860f28ca0138eae340c7453.pdf",
+      "siren": "445070311",
+      "fiscal_year_end": "2023-06-30",
+      "fields": []
+    },
+    {
+      "pdf": "data/504304205/bilans/pdf/bilan_2017-05-31_63e13943526e1f30cd100db5.pdf",
+      "siren": "504304205",
+      "fiscal_year_end": "2016-12-31",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1807858,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.71117057,
+            0.91809976,
+            0.80508361,
+            0.92950119
+          ],
+          "snippet": "1 807 858"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 1147625,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.70394649,
+            0.34045184,
+            0.79705686,
+            0.35300832
+          ],
+          "snippet": "1 147 625"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 385028,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.72361204,
+            0.40285714,
+            0.79906355,
+            0.41742857
+          ],
+          "snippet": "385 028"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -20300,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.72842809,
+            0.93714286,
+            0.80869565,
+            0.95257143
+          ],
+          "snippet": "(20 300)"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 1146,
+          "unit": "EUR",
+          "page": 7,
+          "bbox": [
+            0.74207358,
+            0.33902497,
+            0.80026756,
+            0.3544352
+          ],
+          "snippet": "1 146"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 1048023,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.70474916,
+            0.168,
+            0.79785953,
+            0.18114286
+          ],
+          "snippet": "1 048 023"
+        }
+      ]
+    },
+    {
+      "pdf": "data/504304205/bilans/pdf/bilan_2018-10-24_63e13943526e1f30cd100db6.pdf",
+      "siren": "504304205",
+      "fiscal_year_end": "2017-12-31",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1717114,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.70588235,
+            0.91701068,
+            0.80107563,
+            0.93039146
+          ],
+          "snippet": "1 717 114"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 1191897,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.69942857,
+            0.33992883,
+            0.79381513,
+            0.35302491
+          ],
+          "snippet": "1 191 897"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 364789,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.71838926,
+            0.40389549,
+            0.79409396,
+            0.41700713
+          ],
+          "snippet": "364 789"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -13520,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.72120805,
+            0.93862233,
+            0.79731544,
+            0.95173397
+          ],
+          "snippet": "(13 520)"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 1146,
+          "unit": "EUR",
+          "page": 7,
+          "bbox": [
+            0.89384874,
+            0.34049822,
+            0.94910924,
+            0.35302491
+          ],
+          "snippet": "1 146"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 964484,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.71959732,
+            0.1695962,
+            0.79328859,
+            0.18213777
+          ],
+          "snippet": "964 484"
+        }
+      ]
+    },
+    {
+      "pdf": "data/504304205/bilans/pdf/bilan_2024-08-06_66cd893cedec9b09d50191e8.pdf",
+      "siren": "504304205",
+      "fiscal_year_end": "2020-12-31",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1689390,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.69594865,
+            0.86951564,
+            0.78419574,
+            0.88034185
+          ],
+          "snippet": "1 689 390"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 1010320,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.72081828,
+            0.33703703,
+            0.80986762,
+            0.34814814
+          ],
+          "snippet": "1 010 320"
+        }
+      ]
+    },
+    {
+      "pdf": "data/401009741/bilans/pdf/bilan_2022-11-30_63e881158be6eb9f9d1ff975.pdf",
+      "siren": "401009741",
+      "fiscal_year_end": "2022-04-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 945632,
+          "unit": "EUR",
+          "page": 2,
+          "bbox": [
+            0.88213996,
+            0.91697574,
+            0.94730488,
+            0.9281027
+          ],
+          "snippet": "945 632"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 532640,
+          "unit": "EUR",
+          "page": 3,
+          "bbox": [
+            0.88213996,
+            0.37146932,
+            0.94810939,
+            0.38288159
+          ],
+          "snippet": "532 640"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 297253,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.87078649,
+            0.43519045,
+            0.94502405,
+            0.44769755
+          ],
+          "snippet": "297 253"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -2778,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.89285712,
+            0.93348493,
+            0.95425358,
+            0.94769755
+          ],
+          "snippet": "2 778)"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 63846,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.88683786,
+            0.32717453,
+            0.95064203,
+            0.33996589
+          ],
+          "snippet": "63 846"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 1800826,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.85152486,
+            0.21489482,
+            0.94582662,
+            0.22740193
+          ],
+          "snippet": "1 800 826"
+        }
+      ]
+    },
+    {
+      "pdf": "data/401009741/bilans/pdf/bilan_2023-11-20_65784e5da67d84faf4042736.pdf",
+      "siren": "401009741",
+      "fiscal_year_end": "2023-04-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1014105,
+          "unit": "EUR",
+          "page": 4,
+          "bbox": [
+            0.86323409,
+            0.91934112,
+            0.95132741,
+            0.9326896
+          ],
+          "snippet": "1 014 105"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 658859,
+          "unit": "EUR",
+          "page": 5,
+          "bbox": [
+            0.88616249,
+            0.37214611,
+            0.95414318,
+            0.38470319
+          ],
+          "snippet": "658 859"
+        },
+        {
+          "field_key": "PL_EXT_SERVICES_COSTS_FRGAAP",
+          "value": 329158,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.87570392,
+            0.4336938,
+            0.95052291,
+            0.4467843
+          ],
+          "snippet": "329 158"
+        },
+        {
+          "field_key": "PL_FINANCIAL_RESULTS_FRGAAP",
+          "value": -2096,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.89662106,
+            0.93938533,
+            0.95897021,
+            0.95361413
+          ],
+          "snippet": "2 096)"
+        },
+        {
+          "field_key": "PL_INCOME_TAX_FRGAAP",
+          "value": 53240,
+          "unit": "EUR",
+          "page": 7,
+          "bbox": [
+            0.89300078,
+            0.32384747,
+            0.95695895,
+            0.33750712
+          ],
+          "snippet": "53 240"
+        },
+        {
+          "field_key": "PL_REVENUE_FRGAAP",
+          "value": 1805459,
+          "unit": "EUR",
+          "page": 6,
+          "bbox": [
+            0.85478679,
+            0.21087081,
+            0.95052291,
+            0.22424588
+          ],
+          "snippet": "1 805 459"
+        }
+      ]
+    },
+    {
+      "pdf": "data/401009741/bilans/pdf/bilan_2025-10-03_68f0a715f28d8aaf48046416.pdf",
+      "siren": "401009741",
+      "fiscal_year_end": "2025-04-30",
+      "fields": [
+        {
+          "field_key": "BS_TOTAL_ASSETS_FRGAAP",
+          "value": 1135864,
+          "unit": "EUR",
+          "page": 2,
+          "bbox": [
+            0.88145159,
+            0.92669709,
+            0.96451611,
+            0.93839133
+          ],
+          "snippet": "1 135 864"
+        },
+        {
+          "field_key": "BS_TOTAL_EQUITY_FRGAAP",
+          "value": 595725,
+          "unit": "EUR",
+          "page": 3,
+          "bbox": [
+            0.89838708,
+            0.37934969,
+            0.96693546,
+            0.3930405
+          ],
+          "snippet": "595 725"
+        }
+      ]
+    }
+  ],
+  "run": {
+    "cost_eur_per_page": 0.0,
+    "seconds_per_page": 0.06145689036144527,
+    "pages_processed": 415,
+    "model": "provided OCR + deterministic rules",
+    "notes": "Measured locally over all physical PDF pages inspected by the run, including empty OCR pages. Incremental extraction API cost is EUR 0/page because the MVP makes no model/API calls; upstream OCR, local compute and human review are excluded. Timing covers input loading, extraction and checks up to final JSON serialization/validation bookkeeping."
+  }
+}
